@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="metaTitle">Cerne Marcenaria — Móveis planejados em Bento Gonçalves, RS</title>
+<meta id="metaDesc" name="description" content="Marcenaria própria em Bento Gonçalves, RS. Cozinhas, closets, portas e móveis sob medida, com projeto 3D e prazo contratual. Solicite um orçamento.">
+<meta property="og:title" content="Cerne Marcenaria — Móveis planejados sob medida">
+<meta property="og:description" content="Marcenaria própria em Bento Gonçalves, RS. Projeto 3D, prazo contratual e instalação por equipe própria.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23101012%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23C79A5B%22 font-family=%22serif%22>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json" id="ldJson">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Cerne Marcenaria",
+  "telephone": "+55-31-8539-1759",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua dos Pinheirais, 482 — Bairro São Bento",
+    "addressLocality": "Bento Gonçalves",
+    "addressRegion": "RS",
+    "postalCode": "95700-210",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Bento Gonçalves e Serra Gaúcha"
+}
+</script>
+
+<style>
+  /* ============================================================
+     DESIGN TOKENS — troque estes valores para adaptar a outro
+     segmento/marca sem alterar nenhuma outra linha do arquivo.
+     ============================================================ */
+  :root{
+    --primary:#F5F1EA;             /* cor primária (texto sobre fundo escuro / base de botão principal) */
+    --secondary:#1B1A17;           /* cor secundária (superfícies profundas) */
+    --accent:#C79A5B;              /* cor de destaque */
+    --accent-2:#8C6A3D;            /* destaque, tom profundo (gradientes) */
+    --accent-bright:#E0B571;
+    --background:#101012;          /* fundo geral */
+    --surface:#17161A;             /* cartões, blocos elevados */
+    --surface-2:#1D1B17;           /* variação de superfície (tom quente) */
+    --text:#F5F1EA;                /* texto principal */
+    --muted:#A79E90;               /* texto secundário */
+    --muted-2:#6F675C;             /* texto terciário / legendas */
+    --border:rgba(245,241,234,0.08);
+    --border-strong:rgba(245,241,234,0.16);
+    --radius:20px;                 /* raio padrão dos elementos */
+    --radius-sm:12px;
+    --radius-pill:999px;
+    --shadow-sm:0 6px 20px -10px rgba(0,0,0,.55);
+    --shadow-md:0 24px 60px -24px rgba(0,0,0,.65);
+    --shadow-lg:0 40px 90px -30px rgba(0,0,0,.7);
+    --shadow-accent:0 22px 50px -18px rgba(199,154,91,.4);
+    --ease:cubic-bezier(.16,1,.3,1);
+    --content-w:1220px;
+    --text-w:620px;
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'Work Sans', -apple-system, sans-serif;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background-color:var(--background);
+    background-image:
+      radial-gradient(1200px 640px at 82% -10%, rgba(199,154,91,0.10), transparent 60%),
+      repeating-linear-gradient(100deg, rgba(245,241,234,0.012) 0px, rgba(245,241,234,0.012) 1px, transparent 1px, transparent 74px),
+      repeating-linear-gradient(100deg, rgba(245,241,234,0.02) 0px, rgba(245,241,234,0.02) 1px, transparent 1px, transparent 148px);
+    color:var(--text);
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:var(--font-display);
+    font-weight:500;
+    line-height:1.1;
+    margin:0;
+    letter-spacing:-0.015em;
+  }
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;cursor:pointer;}
+  svg{display:block;}
+
+  .wrap{max-width:var(--content-w);margin:0 auto;padding:0 28px;}
+  section{padding:112px 0;position:relative;}
+  section.tight{padding:88px 0;}
+  @media (max-width:720px){ section{padding:72px 0;} section.tight{padding:56px 0;} }
+
+  .zebra{background:linear-gradient(180deg, var(--surface), var(--surface) 100%);}
+  .divider-top{border-top:1px solid var(--border);}
+  .divider-bottom{border-bottom:1px solid var(--border);}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-size:12.5px;color:var(--accent-bright);
+    letter-spacing:0.06em;text-transform:uppercase;
+    font-weight:600;margin-bottom:20px;
+  }
+  .eyebrow::before{content:"";width:18px;height:1px;background:var(--accent);}
+
+  h2.section-title{font-size:clamp(30px,4vw,44px);max-width:640px;}
+  .section-sub{color:var(--muted);max-width:var(--text-w);margin-top:18px;font-size:17px;line-height:1.7;}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:60px;}
+
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline:2px solid var(--accent-bright);outline-offset:3px;border-radius:4px;
+  }
+
+  /* ============================================================
+     BUTTONS
+     ============================================================ */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:16px 30px;border-radius:var(--radius-pill);
+    font-size:15px;font-weight:600;border:1px solid transparent;
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease), background .3s var(--ease), border-color .3s var(--ease);
+    white-space:nowrap;position:relative;
+  }
+  .btn svg{width:16px;height:16px;transition:transform .3s var(--ease);}
+  .btn-primary{background:var(--primary);color:var(--secondary);}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 36px -10px rgba(245,241,234,0.3);}
+  .btn-accent{background:linear-gradient(155deg, var(--accent-bright), var(--accent) 75%);color:#181410;}
+  .btn-accent:hover{transform:translateY(-3px);box-shadow:var(--shadow-accent);}
+  .btn-accent:hover svg{transform:translateX(3px);}
+  .btn-ghost{background:transparent;color:var(--text);border-color:var(--border-strong);}
+  .btn-ghost:hover{transform:translateY(-3px);border-color:var(--accent);background:rgba(199,154,91,0.06);}
+  .btn-sm{padding:12px 22px;font-size:13.5px;}
+
+  /* ============================================================
+     BADGE — demonstração conceitual (discreto)
+     ============================================================ */
+  .demo-tag{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--muted-2);border:1px dashed var(--border-strong);
+    padding:5px 10px;border-radius:var(--radius-pill);
+  }
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 0;
+    transition:background .35s var(--ease), padding .35s var(--ease), border-color .35s var(--ease);
+    border-bottom:1px solid transparent;
+  }
+  header.scrolled{
+    background:rgba(16,16,18,0.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    padding:14px 0;border-bottom-color:var(--border);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .logo{font-family:var(--font-display);font-size:21px;display:flex;align-items:center;gap:11px;letter-spacing:-0.01em;}
+  .logo-mark{
+    width:36px;height:36px;border-radius:10px;
+    background:linear-gradient(155deg, var(--accent-bright), var(--accent) 70%);
+    display:flex;align-items:center;justify-content:center;color:#181410;font-size:17px;font-weight:700;flex-shrink:0;
+    box-shadow:0 6px 16px -6px rgba(199,154,91,.55);
+  }
+  nav.primary-nav{display:flex;gap:34px;}
+  nav.primary-nav a{font-size:14.5px;color:var(--muted);transition:color .2s;position:relative;}
+  nav.primary-nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--accent-bright);transition:width .25s var(--ease);}
+  nav.primary-nav a:hover{color:var(--text);}
+  nav.primary-nav a:hover::after{width:100%;}
+  .header-actions{display:flex;align-items:center;gap:16px;}
+  .menu-toggle{
+    display:none;background:none;border:1px solid var(--border-strong);border-radius:10px;
+    width:44px;height:44px;align-items:center;justify-content:center;color:var(--text);
+  }
+  .menu-toggle svg{width:18px;height:18px;}
+  .mobile-panel{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);background:rgba(16,16,18,0.98);border-bottom:1px solid var(--border);}
+  .mobile-panel.open{max-height:360px;}
+  .mobile-panel-inner{padding:8px 28px 26px;display:flex;flex-direction:column;gap:4px;}
+  .mobile-panel-inner a{padding:13px 0;font-size:15px;color:var(--muted);border-bottom:1px solid var(--border);}
+  .mobile-panel-inner .btn{margin-top:16px;}
+  @media (max-width:880px){ nav.primary-nav{display:none;} .menu-toggle{display:flex;} .header-cta-desktop{display:none;} }
+
+  /* ============================================================
+     HERO
+     ============================================================ */
+  .hero{padding:184px 0 108px;overflow:hidden;}
+  .hero::before{
+    content:"";position:absolute;top:-10%;right:-6%;width:520px;height:520px;
+    background:radial-gradient(circle, rgba(199,154,91,0.09), transparent 70%);pointer-events:none;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:72px;align-items:center;position:relative;}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;
+    border:1px solid var(--border-strong);border-radius:var(--radius-pill);
+    font-size:13.5px;color:var(--muted);margin-bottom:30px;background:rgba(255,255,255,0.02);
+  }
+  .hero-badge .dot{width:23px;height:23px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#181410;font-size:11px;font-weight:700;}
+  .hero h1{font-size:clamp(40px, 5.8vw, 66px);max-width:600px;}
+  .hero h1 em{font-style:italic;color:var(--accent-bright);}
+  .hero-sub{margin-top:26px;font-size:18.5px;color:var(--muted);max-width:490px;line-height:1.7;}
+  .hero-cta-row{display:flex;gap:16px;margin-top:40px;flex-wrap:wrap;}
+  .hero-micro{margin-top:22px;font-size:13.5px;color:var(--muted-2);display:flex;align-items:center;gap:8px;}
+  .hero-micro svg{width:14px;height:14px;stroke:var(--accent);flex-shrink:0;}
+
+  .hero-visual{
+    position:relative;aspect-ratio:4/5;border-radius:18px;border:1px solid var(--border);
+    background:linear-gradient(160deg, #251F17 0%, #171512 60%, #121012 100%);
+    display:flex;align-items:flex-end;padding:24px;overflow:hidden;
+    box-shadow:var(--shadow-lg);transform-style:preserve-3d;transition:transform .4s var(--ease);
+  }
+  .hero-visual-img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;
+    display:block;z-index:0;
+  }
+  .hero-visual.img-fallback .hero-visual-img{ display:none; }
+  .hero-visual::before{
+    content:"";position:absolute;inset:0;opacity:.35;mix-blend-mode:overlay;z-index:1;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  }
+  .hero-visual::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:60%;z-index:1;pointer-events:none;
+    background:linear-gradient(to top, rgba(10,9,8,0.78), rgba(10,9,8,0) 100%);
+  }
+  .hero-visual-label{
+    position:relative;background:rgba(16,16,18,0.7);backdrop-filter:blur(8px);
+    border:1px solid var(--border);border-radius:14px;padding:16px 18px;font-size:13px;color:var(--muted);z-index:2;
+  }
+  .hero-visual-label strong{display:block;color:var(--text);font-size:14.5px;margin-bottom:3px;font-weight:600;font-family:var(--font-display);}
+  .hero-chip{
+    position:absolute;z-index:3;background:rgba(16,16,18,0.85);backdrop-filter:blur(8px);
+    border:1px solid var(--border-strong);border-radius:var(--radius-pill);
+    padding:9px 14px;font-size:12.5px;color:var(--text);display:flex;align-items:center;gap:8px;
+    box-shadow:var(--shadow-sm);
+  }
+  .hero-chip svg{width:14px;height:14px;stroke:var(--accent-bright);}
+  .hero-chip-1{top:26px;left:26px;}
+  .hero-chip-2{top:78px;right:22px;animation:floaty 5s ease-in-out infinite;}
+  @keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+
+  @media (max-width:900px){
+    .hero{padding:148px 0 76px;}
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-visual{aspect-ratio:16/11;order:-1;}
+  }
+
+  .reveal-seq > *{opacity:0;transform:translateY(16px);animation:seqIn .75s var(--ease) forwards;}
+  .reveal-seq > *:nth-child(1){animation-delay:.05s;}
+  .reveal-seq > *:nth-child(2){animation-delay:.18s;}
+  .reveal-seq > *:nth-child(3){animation-delay:.32s;}
+  .reveal-seq > *:nth-child(4){animation-delay:.46s;}
+  .reveal-seq > *:nth-child(5){animation-delay:.58s;}
+  @keyframes seqIn{ to{opacity:1;transform:translateY(0);} }
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ============================================================
+     TRUST BAR
+     ============================================================ */
+  .trust{padding:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .trust .wrap{padding-top:52px;padding-bottom:52px;}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;}
+  .trust-item{background:var(--background);padding:32px 22px;text-align:center;transition:background .3s;}
+  .trust-item:hover{background:var(--surface);}
+  .trust-num{font-family:var(--font-display);font-size:clamp(28px,3.4vw,40px);color:var(--accent-bright);}
+  .trust-label{margin-top:7px;font-size:13px;color:var(--muted);}
+  .trust-disclaimer{text-align:center;font-size:12px;color:var(--muted-2);margin-top:24px;}
+  @media (max-width:720px){ .trust-grid{grid-template-columns:repeat(2,1fr);} }
+
+  /* ============================================================
+     ABOUT
+     ============================================================ */
+  .about-grid{display:grid;grid-template-columns:0.92fr 1.08fr;gap:72px;align-items:center;}
+  .about-photo{
+    aspect-ratio:1/1;border-radius:var(--radius);border:1px solid var(--border);
+    background:linear-gradient(160deg,#241F19 0%,#171512 55%,#121012 100%);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted-2);
+    font-size:13px;text-align:center;padding:28px;gap:20px;position:relative;overflow:hidden;box-shadow:var(--shadow-md);
+  }
+  .about-photo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%, rgba(199,154,91,.14), transparent 55%);}
+  .about-photo svg{width:56%;max-width:230px;position:relative;z-index:1;}
+  .about-photo .caption{max-width:230px;line-height:1.6;position:relative;z-index:1;color:var(--muted);}
+  .about-copy p{color:var(--muted);margin-top:20px;font-size:16.5px;max-width:var(--text-w);line-height:1.75;}
+  .about-copy p:first-of-type{margin-top:26px;}
+  @media (max-width:840px){ .about-grid{grid-template-columns:1fr;} }
+
+  /* ============================================================
+     SERVICES
+     ============================================================ */
+  .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .service-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:32px 28px;transition:transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
+  }
+  .service-card:hover{transform:translateY(-6px);border-color:var(--border-strong);box-shadow:var(--shadow-md);}
+  .icon-tile{
+    width:48px;height:48px;border-radius:13px;background:var(--surface-2);border:1px solid var(--border-strong);
+    display:flex;align-items:center;justify-content:center;margin-bottom:22px;transition:transform .35s var(--ease), background .35s var(--ease);
+  }
+  .service-card:hover .icon-tile{transform:scale(1.08) rotate(-4deg);background:linear-gradient(155deg, rgba(199,154,91,.22), rgba(199,154,91,.05));}
+  .icon-tile svg{width:22px;height:22px;stroke:var(--accent-bright);}
+  .service-card h3{font-size:19.5px;font-weight:500;margin-bottom:11px;}
+  .service-card p{color:var(--muted);font-size:14.5px;line-height:1.65;}
+  .service-list{margin-top:18px;display:flex;flex-direction:column;gap:9px;}
+  .service-list li{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;color:var(--muted);}
+  .service-list svg{width:15px;height:15px;stroke:var(--accent);flex-shrink:0;margin-top:2px;}
+  @media (max-width:960px){ .card-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:640px){ .card-grid{grid-template-columns:1fr;} }
+
+  .service-card-featured{grid-column:span 2;}
+  @media (max-width:640px){ .service-card-featured{grid-column:span 1;} }
+
+  /* ============================================================
+     DIFFERENTIALS
+     ============================================================ */
+  .diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;}
+  .diff-item{background:var(--background);padding:34px 26px;transition:background .3s;}
+  .diff-item:hover{background:var(--surface);}
+  .diff-item .icon-tile{margin-bottom:20px;}
+  .diff-item h4{font-size:16.5px;font-weight:500;margin-bottom:9px;}
+  .diff-item p{font-size:13.5px;color:var(--muted);line-height:1.6;}
+  @media (max-width:900px){ .diff-grid{grid-template-columns:repeat(2,1fr);} }
+
+  /* ============================================================
+     PORTFOLIO / CAROUSEL
+     ============================================================ */
+  .filter-row{display:flex;gap:11px;margin-bottom:36px;flex-wrap:wrap;}
+  .filter-pill{padding:10px 20px;border-radius:var(--radius-pill);border:1px solid var(--border-strong);font-size:13.5px;color:var(--muted);background:transparent;transition:all .3s var(--ease);}
+  .filter-pill.active, .filter-pill:hover{border-color:var(--accent);color:var(--text);background:rgba(199,154,91,0.1);}
+
+  .carousel-wrap{position:relative;}
+  .carousel{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none;}
+  .carousel::-webkit-scrollbar{display:none;}
+  .port-card{
+    flex:0 0 auto;width:350px;scroll-snap-align:start;border-radius:var(--radius);overflow:hidden;
+    border:1px solid var(--border);background:var(--surface);cursor:pointer;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
+  }
+  .port-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--border-strong);}
+  .port-photo{
+    aspect-ratio:4/3;position:relative;overflow:hidden;
+    background:linear-gradient(150deg,#28231B,#181410);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .port-photo img{
+    width:100%;height:100%;object-fit:cover;object-position:center;
+    position:relative;z-index:2;
+    transition:transform .5s var(--ease);
+  }
+  .port-card:hover .port-photo img{
+    transform:scale(1.05);
+  }
+  .port-photo::before{
+    content:"";position:absolute;inset:0;opacity:.4;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.3'/%3E%3C/svg%3E");
+  }
+  .port-photo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 20%, rgba(199,154,91,.22), transparent 60%);}
+  .port-photo svg{width:44%;position:relative;z-index:1;}
+  .port-info{padding:20px 22px;}
+  .port-cat{font-size:11.5px;color:var(--accent-bright);margin-bottom:7px;letter-spacing:.03em;text-transform:uppercase;}
+  .port-info h4{font-size:16.5px;font-weight:500;}
+  .port-info p{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.55;}
+
+  .carousel-dots{display:flex;gap:8px;justify-content:center;margin-top:28px;}
+  .carousel-dots button{width:7px;height:7px;border-radius:50%;background:var(--border-strong);border:none;padding:0;transition:background .3s, width .3s;}
+  .carousel-dots button.active{background:var(--accent-bright);width:22px;border-radius:4px;}
+  .carousel-arrows{display:flex;gap:10px;position:absolute;right:0;top:-76px;}
+  .carousel-arrows button{width:44px;height:44px;border-radius:50%;border:1px solid var(--border-strong);background:transparent;color:var(--text);display:flex;align-items:center;justify-content:center;transition:border-color .25s, transform .25s, background .25s;}
+  .carousel-arrows button:hover{border-color:var(--accent);transform:translateY(-2px);background:rgba(199,154,91,.08);}
+  .carousel-arrows svg{width:16px;height:16px;}
+  @media (max-width:720px){ .carousel-arrows{display:none;} }
+
+  .lightbox{position:fixed;inset:0;z-index:200;background:rgba(8,8,9,0.94);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .35s var(--ease);}
+  .lightbox.open{opacity:1;pointer-events:auto;}
+  .lightbox-inner{display:flex;align-items:center;gap:14px;max-width:100%;}
+  .lightbox-box{max-width:660px;width:100%;background:var(--surface);border:1px solid var(--border-strong);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);position:relative;}
+  .lightbox-close{position:absolute;top:26px;right:26px;width:44px;height:44px;border-radius:50%;border:1px solid var(--border-strong);background:rgba(16,16,18,0.7);color:var(--text);display:flex;align-items:center;justify-content:center;}
+  .lightbox-nav{
+    flex-shrink:0;width:48px;height:48px;border-radius:50%;border:1px solid var(--border-strong);
+    background:rgba(16,16,18,0.7);color:var(--text);display:flex;align-items:center;justify-content:center;
+    transition:border-color .25s, background .25s, transform .25s;
+  }
+  .lightbox-nav:hover{border-color:var(--accent);background:rgba(199,154,91,.12);transform:scale(1.06);}
+  .lightbox-nav svg{width:19px;height:19px;}
+  .lightbox-counter{position:absolute;top:14px;left:14px;z-index:2;font-size:11.5px;color:var(--muted);background:rgba(16,16,18,0.75);backdrop-filter:blur(4px);padding:5px 12px;border-radius:var(--radius-pill);border:1px solid var(--border);}
+  @media (max-width:760px){
+    .lightbox{padding:14px;}
+    .lightbox-inner{gap:6px;}
+    .lightbox-nav{width:38px;height:38px;}
+    .lightbox-nav svg{width:16px;height:16px;}
+  }
+
+  /* -------------------- portfolio carousel side nav -------------------- */
+  .carousel-wrap{position:relative;}
+  .carousel-edge-nav{
+    position:absolute;top:0;bottom:8px;width:56px;display:flex;align-items:center;z-index:3;pointer-events:none;
+  }
+  .carousel-edge-nav.left{left:0;justify-content:flex-start;background:linear-gradient(90deg, var(--background), transparent);}
+  .carousel-edge-nav.right{right:0;justify-content:flex-end;background:linear-gradient(270deg, var(--background), transparent);}
+  .zebra .carousel-edge-nav.left{background:linear-gradient(90deg, var(--surface), transparent);}
+  .zebra .carousel-edge-nav.right{background:linear-gradient(270deg, var(--surface), transparent);}
+  .carousel-edge-nav button{
+    pointer-events:auto;width:40px;height:40px;border-radius:50%;border:1px solid var(--border-strong);
+    background:rgba(16,16,18,0.75);backdrop-filter:blur(6px);color:var(--text);display:flex;align-items:center;justify-content:center;
+    transition:border-color .25s, transform .25s, background .25s;
+  }
+  .carousel-edge-nav button:hover{border-color:var(--accent);background:rgba(199,154,91,.14);transform:scale(1.06);}
+  .carousel-edge-nav svg{width:16px;height:16px;}
+  .carousel-swipe-hint{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:6px;font-size:12px;color:var(--muted-2);}
+  .carousel-swipe-hint svg{width:13px;height:13px;stroke:var(--accent-bright);animation:hintNudge 1.8s ease-in-out infinite;}
+  @media (min-width:721px){ .carousel-swipe-hint{display:none;} .carousel-edge-nav{display:none !important;} }
+
+  /* ============================================================
+     PROCESS
+     ============================================================ */
+  .process-list{display:flex;flex-direction:column;}
+  .process-item{display:grid;grid-template-columns:64px 1fr;gap:26px;padding:30px 0;border-top:1px solid var(--border);transition:padding-left .3s var(--ease);}
+  .process-item:hover{padding-left:8px;}
+  .process-item:last-child{border-bottom:1px solid var(--border);}
+  .process-num{font-family:var(--font-display);font-size:23px;color:var(--accent-bright);}
+  .process-item h4{font-size:18.5px;font-weight:500;margin-bottom:7px;}
+  .process-item p{color:var(--muted);font-size:14.5px;max-width:540px;line-height:1.65;}
+
+  /* ============================================================
+     GOOGLE REVIEWS
+     ============================================================ */
+  .reviews-summary{
+    display:flex;align-items:center;gap:22px;flex-wrap:wrap;background:var(--surface);
+    border:1px solid var(--border);border-radius:var(--radius);padding:26px 30px;margin-bottom:36px;
+  }
+  .reviews-g-logo{width:40px;height:40px;flex-shrink:0;}
+  .reviews-summary-main{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .reviews-score{font-family:var(--font-display);font-size:32px;color:var(--accent-bright);}
+  .reviews-summary-stars{display:flex;gap:2px;}
+  .reviews-summary-stars svg{width:16px;height:16px;fill:var(--accent-bright);stroke:none;}
+  .reviews-count{font-size:13.5px;color:var(--muted);}
+  .reviews-summary-cta{margin-left:auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  @media (max-width:720px){ .reviews-summary{padding:22px 20px;} .reviews-summary-cta{margin-left:0;width:100%;} .reviews-summary-cta .btn{width:100%;} }
+
+  .reviews-carousel-wrap{position:relative;}
+  .reviews-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;}
+  .reviews-track::-webkit-scrollbar{display:none;}
+  .review-card{
+    border:1px solid var(--border);background:var(--surface);border-radius:var(--radius);
+    padding:26px 28px;width:340px;flex:0 0 auto;scroll-snap-align:start;box-shadow:var(--shadow-sm);
+  }
+  .review-top{display:flex;align-items:center;gap:12px;}
+  .review-avatar{
+    width:42px;height:42px;border-radius:50%;background:linear-gradient(155deg, var(--accent-bright), var(--accent) 75%);
+    display:flex;align-items:center;justify-content:center;color:#181410;font-weight:700;font-size:14px;flex-shrink:0;
+  }
+  .review-name{font-size:14px;font-weight:600;}
+  .review-date{font-size:12px;color:var(--muted-2);}
+  .review-stars{display:flex;gap:3px;margin-top:14px;margin-bottom:12px;}
+  .review-stars svg{width:14px;height:14px;fill:var(--accent-bright);stroke:none;}
+  .review-card p.quote{color:var(--text);font-size:14.5px;line-height:1.65;}
+
+  .reviews-hint{
+    display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;
+    font-size:12.5px;color:var(--muted-2);
+  }
+  .reviews-hint svg{width:14px;height:14px;stroke:var(--accent-bright);animation:hintNudge 1.8s ease-in-out infinite;}
+  @keyframes hintNudge{0%,100%{transform:translateX(0);}50%{transform:translateX(5px);}}
+
+  .reviews-track-fade{position:absolute;top:0;bottom:24px;width:60px;pointer-events:none;z-index:2;}
+  .reviews-track-fade.left{left:0;background:linear-gradient(90deg, var(--background), transparent);opacity:0;transition:opacity .3s;}
+  .reviews-track-fade.right{right:0;background:linear-gradient(270deg, var(--background), transparent);}
+  .zebra .reviews-track-fade.left{background:linear-gradient(90deg, var(--surface), transparent);}
+  .zebra .reviews-track-fade.right{background:linear-gradient(270deg, var(--surface), transparent);}
+
+  .reviews-note{margin-top:20px;font-size:12.5px;color:var(--muted-2);border:1px dashed var(--border-strong);border-radius:12px;padding:14px 18px;}
+
+  /* Google reviews modal */
+  .gmodal{position:fixed;inset:0;z-index:210;background:rgba(8,8,9,0.92);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s var(--ease);}
+  .gmodal.open{opacity:1;pointer-events:auto;}
+  .gmodal-box{max-width:480px;width:100%;max-height:82vh;overflow-y:auto;background:var(--surface);border:1px solid var(--border-strong);border-radius:var(--radius);box-shadow:var(--shadow-lg);}
+  .gmodal-head{padding:24px 26px 18px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--surface);z-index:1;}
+  .gmodal-demo-flag{display:flex;align-items:center;gap:8px;background:rgba(199,154,91,0.1);border:1px dashed var(--border-strong);border-radius:10px;padding:9px 12px;font-size:11.5px;color:var(--accent-bright);margin-bottom:16px;}
+  .gmodal-biz{display:flex;align-items:center;gap:14px;}
+  .gmodal-biz-name{font-family:var(--font-display);font-size:19px;}
+  .gmodal-biz-meta{display:flex;align-items:center;gap:8px;margin-top:4px;font-size:13px;color:var(--muted);}
+  .gmodal-biz-meta .reviews-summary-stars svg{width:13px;height:13px;}
+  .gmodal-close{position:absolute;top:20px;right:20px;width:38px;height:38px;border-radius:50%;border:1px solid var(--border-strong);background:rgba(16,16,18,0.7);color:var(--text);display:flex;align-items:center;justify-content:center;}
+  .gmodal-body{padding:8px 26px 26px;}
+  .gmodal-review{padding:16px 0;border-top:1px solid var(--border);}
+  .gmodal-review:first-child{border-top:none;}
+
+  /* ============================================================
+     FAQ
+     ============================================================ */
+  .faq-item{border-top:1px solid var(--border);transition:background .3s;}
+  .faq-item:last-child{border-bottom:1px solid var(--border);}
+  .faq-item.open{background:linear-gradient(90deg, rgba(199,154,91,.05), transparent 40%);}
+  .faq-q{width:100%;background:none;border:none;color:var(--text);display:flex;justify-content:space-between;align-items:center;padding:24px 4px;font-size:16.5px;font-family:var(--font-display);text-align:left;gap:16px;}
+  .faq-q svg{width:19px;height:19px;flex-shrink:0;transition:transform .35s var(--ease);stroke:var(--accent-bright);}
+  .faq-item.open .faq-q svg{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);}
+  .faq-a p{color:var(--muted);padding:0 4px 24px;max-width:var(--text-w);font-size:15px;line-height:1.7;}
+
+  /* ============================================================
+     LEAD FORM
+     ============================================================ */
+  .lead-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);}
+  .lead-form-col, .lead-whats-col{background:var(--surface);padding:46px;}
+  .field{margin-bottom:20px;}
+  .field label{display:block;font-size:13px;color:var(--muted);margin-bottom:8px;}
+  .field input, .field select, .field textarea{
+    width:100%;background:var(--surface-2);border:1px solid var(--border-strong);border-radius:11px;
+    padding:14px 15px;color:var(--text);font-size:14.5px;font-family:inherit;transition:border-color .25s, box-shadow .25s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px rgba(199,154,91,.15);}
+  .field textarea{resize:vertical;min-height:96px;}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .form-note{font-size:12.5px;color:var(--muted-2);margin-top:14px;text-align:center;}
+  @media (max-width:520px){ .field-row{grid-template-columns:1fr;} }
+
+  /* -------------------- service chip select -------------------- */
+  .chip-select{display:flex;flex-wrap:wrap;gap:10px;}
+  .chip-option{
+    display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:var(--radius-pill);
+    border:1px solid var(--border-strong);background:var(--surface-2);color:var(--muted);font-size:13.5px;
+    transition:all .25s var(--ease);
+  }
+  .chip-option svg{width:15px;height:15px;stroke:currentColor;flex-shrink:0;}
+  .chip-option:hover{border-color:var(--accent);color:var(--text);}
+  .chip-option.selected{
+    background:linear-gradient(155deg, rgba(199,154,91,.24), rgba(199,154,91,.09));
+    border-color:var(--accent);color:var(--text);box-shadow:0 0 0 1px rgba(199,154,91,.2) inset;
+  }
+  .chip-option.selected .chip-check{
+    width:16px;height:16px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .chip-option.selected .chip-check svg{width:10px;height:10px;stroke:#181410;stroke-width:3;}
+  .chip-check{display:none;}
+  .chip-option.selected .chip-check{display:flex;}
+
+  .lead-whats-col{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(155deg, rgba(199,154,91,0.14), transparent 60%), var(--surface);}
+  .lead-whats-col h3{font-size:23px;margin-bottom:13px;}
+  .lead-whats-col p{color:var(--muted);font-size:14.5px;margin-bottom:24px;line-height:1.65;}
+  .whats-contact{display:flex;align-items:center;gap:15px;margin-top:26px;padding-top:26px;border-top:1px solid var(--border);}
+  .whats-contact .icon-tile{margin-bottom:0;}
+  .whats-contact strong{display:block;font-size:15px;}
+  .whats-contact span{font-size:13px;color:var(--muted-2);}
+  @media (max-width:840px){ .lead-grid{grid-template-columns:1fr;} }
+
+  /* ============================================================
+     LOCATION
+     ============================================================ */
+  .location-card{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);}
+  .location-info, .location-map{background:var(--surface);padding:42px;}
+  .location-address-row{display:flex;gap:14px;align-items:flex-start;}
+  .location-address-row .icon-tile{margin-bottom:0;flex-shrink:0;}
+  .location-address-row dl{display:grid;gap:3px;}
+  .location-address-row dt{color:var(--muted-2);font-size:12px;text-transform:uppercase;letter-spacing:.03em;}
+  .location-address-row dd{margin:0;font-size:14.5px;line-height:1.55;}
+  .location-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+
+  .hours-block{margin-top:30px;padding-top:26px;border-top:1px solid var(--border);}
+  .hours-title{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-2);font-weight:600;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .open-badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;padding:5px 11px;border-radius:var(--radius-pill);font-weight:600;text-transform:none;letter-spacing:0;}
+  .open-badge .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .open-badge.is-open{background:rgba(120,190,120,.14);color:#8fd18f;}
+  .open-badge.is-open .dot{background:#6fc26f;box-shadow:0 0 0 3px rgba(111,194,111,.2);}
+  .open-badge.is-closed{background:rgba(199,154,91,.1);color:var(--muted);}
+  .open-badge.is-closed .dot{background:var(--muted-2);}
+  .hours-rows{display:flex;flex-direction:column;}
+  .hours-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-top:1px solid var(--border);font-size:14px;}
+  .hours-row:first-child{border-top:none;}
+  .hours-row .days{color:var(--text);}
+  .hours-row .hrs{color:var(--muted);font-variant-numeric:tabular-nums;}
+  .hours-row.today .days{color:var(--accent-bright);font-weight:600;}
+  .hours-row.closed .hrs{color:var(--muted-2);}
+
+  .location-map{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(150deg,#221F19,#151412);flex-direction:column;gap:20px;cursor:pointer;transition:background .3s;}
+  .location-map:hover{background:linear-gradient(150deg,#2a251d,#191613);}
+  .location-map-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .4s var(--ease), filter .4s var(--ease);filter:brightness(0.85);}
+  .location-map:hover .location-map-img{transform:scale(1.04);filter:brightness(0.95);}
+  .location-map svg{width:70%;opacity:.9;transition:transform .4s var(--ease);}
+  .location-map:hover svg{transform:scale(1.04);}
+  .location-map-pin-label{position:relative;z-index:1;background:rgba(16,16,18,0.7);backdrop-filter:blur(6px);border:1px solid var(--border);border-radius:12px;padding:10px 16px;font-size:12.5px;color:var(--muted);text-align:center;}
+  .location-map-overlay{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:8px;
+    background:rgba(16,16,18,0.55);opacity:0;transition:opacity .3s var(--ease);color:var(--text);
+    font-size:14px;font-weight:600;
+  }
+  .location-map-overlay svg{width:16px;height:16px;opacity:1;transform:none;stroke:var(--accent-bright);}
+  .location-map:hover .location-map-overlay, .location-map:focus-visible .location-map-overlay{opacity:1;}
+  @media (max-width:760px){ .location-card{grid-template-columns:1fr;} .location-map{min-height:220px;} .location-map-overlay{opacity:1;background:rgba(16,16,18,0.28);align-items:flex-end;padding-bottom:16px;} }
+
+  /* ============================================================
+     CTA FINAL
+     ============================================================ */
+  .cta-final{text-align:center;overflow:hidden;}
+  .cta-final::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:900px;height:400px;background:radial-gradient(circle, rgba(199,154,91,0.12), transparent 65%);pointer-events:none;}
+  .cta-final h2{font-size:clamp(32px,4.6vw,48px);max-width:660px;margin:0 auto;position:relative;}
+  .cta-final .section-sub{margin-left:auto;margin-right:auto;position:relative;}
+  .cta-final .hero-cta-row{justify-content:center;margin-top:36px;position:relative;}
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  footer{padding:60px 0 34px;border-top:1px solid var(--border);background:var(--secondary);}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:38px;}
+  .footer-col h5{font-size:13px;color:var(--muted-2);margin-bottom:16px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
+  .footer-col ul{display:flex;flex-direction:column;gap:11px;}
+  .footer-col a, .footer-col p{font-size:13.5px;color:var(--muted);}
+  .footer-col a:hover{color:var(--text);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;border-top:1px solid var(--border);font-size:12.5px;color:var(--muted-2);flex-wrap:wrap;gap:14px;}
+  @media (max-width:760px){ .footer-grid{grid-template-columns:1fr 1fr;} }
+
+  /* ============================================================
+     WHATSAPP FLOAT
+     ============================================================ */
+  .whats-float{
+    position:fixed;bottom:26px;right:26px;z-index:90;width:60px;height:60px;border-radius:50%;
+    background:linear-gradient(155deg, var(--accent-bright), var(--accent) 75%);color:#181410;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px -10px rgba(0,0,0,.55);
+  }
+  .whats-float svg{width:27px;height:27px;}
+  .whats-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--accent);animation:pulse 2.6s ease-out infinite;}
+  @keyframes pulse{0%{transform:scale(1);opacity:.6;}100%{transform:scale(1.8);opacity:0;}}
+
+  @media (prefers-reduced-motion: reduce){
+    *, *::before, *::after{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;scroll-behavior:auto !important;}
+    .reveal-seq > *, .reveal{opacity:1;transform:none;}
+    .whats-float::after{display:none;}
+    .hero-chip-2{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo"><span class="logo-mark" id="logoMark">C</span><span id="brandName">Cerne Marcenaria</span></a>
+    <nav class="primary-nav" id="primaryNav"></nav>
+    <div class="header-actions">
+      <a href="#contato" class="btn btn-accent btn-sm header-cta-desktop" id="headerCta">Solicitar orçamento</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <div class="mobile-panel-inner" id="mobileNav"></div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal-seq">
+        <div class="hero-badge" id="heroBadge"><span class="dot" id="heroBadgeDot">C</span><span id="heroBadgeText">Marcenaria própria · Bento Gonçalves, RS</span></div>
+        <h1 id="heroHeadline">Móveis planejados que respeitam a <em>madeira</em> e o seu espaço.</h1>
+        <p class="hero-sub" id="heroSub">Projetamos e fabricamos cozinhas, closets, portas e móveis sob medida em marcenaria própria — do desenho em 3D à instalação final.</p>
+        <div class="hero-cta-row">
+          <a href="#contato" class="btn btn-primary" id="heroPrimaryCta">Solicitar orçamento</a>
+          <a href="#portfolio" class="btn btn-ghost" id="heroSecondaryCta">Ver nossos trabalhos</a>
+        </div>
+        <p class="hero-micro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span id="heroMicro">Resposta em até 1 dia útil · Visita técnica sem custo na região de Bento Gonçalves</span></p>
+      </div>
+      <div class="hero-visual" id="heroVisual">
+        <img class="hero-visual-img" id="heroImage" src="" alt="" loading="eager" fetchpriority="high" decoding="async">
+        <div class="hero-chip hero-chip-1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 12h16"/></svg>Projeto 3D incluso</div>
+        <div class="hero-chip hero-chip-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>Garantia de 5 anos</div>
+        <div class="hero-visual-label" id="heroVisualLabel" aria-hidden="true">
+          <strong>O cerne é a parte mais densa da madeira</strong>
+          É de onde vem o nome — e a ideia de construir algo que dura.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust tight">
+    <div class="wrap">
+      <div class="trust-grid" id="trustGrid"></div>
+      <p class="trust-disclaimer">Demonstração conceitual — números ilustrativos, substitua pelos valores reais da empresa antes de publicar.</p>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="wrap about-grid">
+      <div class="about-photo reveal">
+        <svg viewBox="0 0 200 160" fill="none" stroke="#E0B571" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="20" y="70" width="160" height="14" rx="2" stroke-opacity="0.8"/>
+          <line x1="34" y1="84" x2="34" y2="130" stroke-opacity="0.6"/><line x1="166" y1="84" x2="166" y2="130" stroke-opacity="0.6"/>
+          <path d="M70 70 L82 40 L118 40 L130 70" stroke-opacity="0.5"/><circle cx="100" cy="40" r="6" stroke-opacity="0.7"/>
+          <line x1="60" y1="30" x2="140" y2="30" stroke-opacity="0.25" stroke-dasharray="1 6"/>
+        </svg>
+        <div class="caption">Bancada de trabalho da oficina própria, no bairro São Bento.</div>
+      </div>
+      <div class="about-copy reveal" id="aboutCopy"></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="zebra divider-top divider-bottom">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">O que fazemos</span><h2 class="section-title" id="servicesTitle">Projetos sob medida, para cada ambiente da casa.</h2></div>
+        <p class="section-sub" id="servicesSub">Do primeiro desenho em 3D até a instalação, cada projeto passa pela mesma equipe.</p>
+      </div>
+      <div class="card-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Por que escolher</span><h2 class="section-title" id="diffTitle">Fabricação própria do início ao fim.</h2></div>
+      </div>
+      <div class="diff-grid" id="diffGrid"></div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="zebra divider-top divider-bottom">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Portfólio</span><h2 class="section-title" id="portfolioTitle">Projetos entregues em Bento Gonçalves e região.</h2></div>
+      </div>
+      <div class="filter-row" id="filterRow" role="tablist" aria-label="Filtrar por categoria"></div>
+      <div class="carousel-wrap">
+        <div class="carousel-arrows">
+          <button id="portPrev" aria-label="Imagem anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button id="portNext" aria-label="Próxima imagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+        <div class="carousel-edge-nav left"><button id="portPrevMobile" aria-label="Imagem anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button></div>
+        <div class="carousel-edge-nav right"><button id="portNextMobile" aria-label="Próxima imagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button></div>
+        <div class="carousel" id="portCarousel"></div>
+      </div>
+      <div class="carousel-dots" id="portDots"></div>
+      <p class="carousel-swipe-hint"><span>Arraste ou toque nas setas para ver mais projetos</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></p>
+      <div style="text-align:center;margin-top:48px;"><a href="#contato" class="btn btn-primary">Quero um projeto assim</a></div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="lightbox-inner">
+      <button class="lightbox-nav" id="lightboxPrev" aria-label="Imagem anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="lightbox-box">
+        <div class="port-photo" style="aspect-ratio:16/10;" id="lightboxPhoto">
+          <div id="lightboxPhotoIcon" style="display:contents;"></div>
+          <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+        <div class="port-info"><div class="port-cat" id="lightboxCat"></div><h4 id="lightboxTitle"></h4><p id="lightboxDesc"></p></div>
+      </div>
+      <button class="lightbox-nav" id="lightboxNext" aria-label="Próxima imagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Processo</span><h2 class="section-title" id="processTitle">Do primeiro contato à instalação final.</h2></div>
+      </div>
+      <div class="process-list reveal" id="processList"></div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES DO GOOGLE -->
+  <section id="depoimentos" class="zebra divider-top divider-bottom">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Avaliações</span><h2 class="section-title">O que dizem no Google.</h2></div>
+      </div>
+
+      <div class="reviews-summary reveal">
+        <svg class="reviews-g-logo" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20.4H24v7.2h11.3c-1.6 4.7-6.1 8.1-11.3 8.1-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 3l5.1-5.1C33.7 6.1 29.1 4.2 24 4.2 12.9 4.2 3.9 13.1 3.9 24.2s9 20 20.1 20c11.6 0 19.2-8.2 19.2-19.7 0-1.4-.1-2.7-.4-4z"/><path fill="#FF3D00" d="M6.3 14.7l5.9 4.3C13.8 15.4 18.5 12.4 24 12.4c3 0 5.8 1.1 7.9 3l5.1-5.1C33.7 6.1 29.1 4.2 24 4.2c-7.5 0-14 4.2-17.7 10.5z"/><path fill="#4CAF50" d="M24 44.2c5 0 9.5-1.9 12.9-5l-5.9-5c-1.9 1.4-4.3 2.3-7 2.3-5.2 0-9.6-3.4-11.2-8.1l-5.9 4.5c3.6 6.2 10.1 11.3 17.1 11.3z"/><path fill="#1976D2" d="M43.6 20.5H42V20.4H24v7.2h11.3c-.8 2.3-2.2 4.2-4.2 5.6l5.9 5c-.4.4 6.9-5 6.9-15.3 0-1.4-.1-2.7-.4-4z"/></svg>
+        <div class="reviews-summary-main">
+          <span class="reviews-score" id="reviewsScore"></span>
+          <div>
+            <div class="reviews-summary-stars" id="reviewsSummaryStars"></div>
+            <div class="reviews-count" id="reviewsCount"></div>
+          </div>
+        </div>
+        <div class="reviews-summary-cta">
+          <span class="demo-tag">Avaliações demonstrativas</span>
+          <button class="btn btn-ghost btn-sm" id="openReviewsModal" type="button">Ver avaliações no Google</button>
+        </div>
+      </div>
+
+      <div class="reviews-carousel-wrap">
+        <div class="carousel-arrows" style="top:-72px;">
+          <button id="reviewsPrev" aria-label="Avaliação anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button id="reviewsNext" aria-label="Próxima avaliação"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+        <div class="reviews-track-fade left" id="reviewsFadeLeft"></div>
+        <div class="reviews-track-fade right"></div>
+        <div class="reviews-track" id="reviewsTrack"></div>
+      </div>
+      <div class="reviews-hint"><span id="reviewsHintText">Arraste para ver mais avaliações</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+      <p class="reviews-note">Demonstração conceitual — empresa e avaliações fictícias, criadas apenas para ilustrar o layout. Substitua pelas avaliações reais do seu perfil no Google antes de publicar.</p>
+    </div>
+  </section>
+
+  <!-- MODAL DE AVALIAÇÕES (DEMONSTRAÇÃO) -->
+  <div class="gmodal" id="reviewsModal">
+    <div class="gmodal-box">
+      <div class="gmodal-head">
+        <button class="gmodal-close" id="gmodalClose" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        <div class="gmodal-demo-flag"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Prévia demonstrativa — não é o perfil real no Google</div>
+        <div class="gmodal-biz">
+          <svg class="reviews-g-logo" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20.4H24v7.2h11.3c-1.6 4.7-6.1 8.1-11.3 8.1-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 3l5.1-5.1C33.7 6.1 29.1 4.2 24 4.2 12.9 4.2 3.9 13.1 3.9 24.2s9 20 20.1 20c11.6 0 19.2-8.2 19.2-19.7 0-1.4-.1-2.7-.4-4z"/><path fill="#FF3D00" d="M6.3 14.7l5.9 4.3C13.8 15.4 18.5 12.4 24 12.4c3 0 5.8 1.1 7.9 3l5.1-5.1C33.7 6.1 29.1 4.2 24 4.2c-7.5 0-14 4.2-17.7 10.5z"/><path fill="#4CAF50" d="M24 44.2c5 0 9.5-1.9 12.9-5l-5.9-5c-1.9 1.4-4.3 2.3-7 2.3-5.2 0-9.6-3.4-11.2-8.1l-5.9 4.5c3.6 6.2 10.1 11.3 17.1 11.3z"/><path fill="#1976D2" d="M43.6 20.5H42V20.4H24v7.2h11.3c-.8 2.3-2.2 4.2-4.2 5.6l5.9 5c-.4.4 6.9-5 6.9-15.3 0-1.4-.1-2.7-.4-4z"/></svg>
+          <div>
+            <div class="gmodal-biz-name" id="gmodalBizName"></div>
+            <div class="gmodal-biz-meta"><span id="gmodalBizScore"></span><div class="reviews-summary-stars" id="gmodalBizStars"></div><span id="gmodalBizCount"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="gmodal-body" id="gmodalBody"></div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Perguntas frequentes</span><h2 class="section-title">Antes de solicitar o orçamento.</h2></div>
+      </div>
+      <div id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="zebra divider-top divider-bottom">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Contato</span><h2 class="section-title">Vamos falar sobre o seu projeto.</h2></div>
+        <p class="section-sub">Responda o formulário ou chame diretamente no WhatsApp — o que for mais fácil para você.</p>
+      </div>
+      <div class="lead-grid reveal">
+        <div class="lead-form-col">
+          <form id="leadForm">
+            <div class="field-row">
+              <div class="field"><label for="fname">Nome</label><input id="fname" name="nome" type="text" placeholder="Seu nome" required></div>
+              <div class="field"><label for="fphone">WhatsApp</label><input id="fphone" name="whatsapp" type="tel" inputmode="numeric" placeholder="(31) 99999-9999" maxlength="15" required></div>
+            </div>
+            <div class="field"><label for="femail">E-mail (opcional)</label><input id="femail" name="email" type="email" placeholder="seu@email.com"></div>
+            <div class="field">
+              <label id="fserviceLabel">Serviços de interesse</label>
+              <div class="chip-select" id="fserviceChips" role="group" aria-labelledby="fserviceLabel"></div>
+              <input type="hidden" id="fservice" name="servico">
+            </div>
+            <div class="field"><label for="fmsg">Mensagem</label><textarea id="fmsg" name="mensagem" placeholder="Conte um pouco sobre o ambiente e o que você precisa"></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Solicitar orçamento</button>
+            <p class="form-note">Sem compromisso — retorno em até 1 dia útil.</p>
+          </form>
+        </div>
+        <div class="lead-whats-col">
+          <div class="icon-tile" style="padding:0;overflow:hidden;border:none;">
+            <img src="imagens/botao do zap.jpg" alt="WhatsApp" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-sm);display:block;">
+          </div>
+          <h3>Prefere chamar direto?</h3>
+          <p>Fale agora com a equipe pelo WhatsApp e receba retorno em até 1 dia útil.</p>
+          <a href="#" id="whatsCtaBtn" class="btn btn-accent" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <div class="whats-contact">
+            <div class="icon-tile" style="padding:0;overflow:hidden;border:none;">
+              <img src="imagens/botao do zap.jpg" alt="WhatsApp" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-sm);display:block;">
+            </div>
+            <div><strong id="phoneDisplay">(54) 3454-8821</strong><span>Telefone / WhatsApp</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section id="localizacao">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Onde estamos</span><h2 class="section-title" id="locationTitle">Atendimento em Bento Gonçalves e Serra Gaúcha.</h2></div>
+      </div>
+      <div class="location-card reveal">
+        <div class="location-info">
+          <div class="location-address-row">
+            <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <dl id="locationDl"></dl>
+          </div>
+          <p style="color:var(--muted);font-size:13.5px;margin-top:14px;">Visitas à oficina com horário agendado · Atendemos <span id="locationAreaServed"></span></p>
+          <div class="location-cta-row">
+            <a href="#" id="mapsCtaBtn" class="btn btn-accent btn-sm" target="_blank" rel="noopener">Abrir no Google Maps</a>
+          </div>
+          <div class="hours-block">
+            <div class="hours-title">Horário de funcionamento<span class="open-badge" id="openBadge"></span></div>
+            <div class="hours-rows" id="hoursRows"></div>
+          </div>
+        </div>
+        <a class="location-map" id="locationMapLink" href="#" target="_blank" rel="noopener" aria-label="Abrir localização no Google Maps">
+          <img class="location-map-img" src="imagens/WhatsApp Image 2026-09-05 at 21.39.42.jpeg" alt="Mapa de localização no Google Maps" loading="lazy" decoding="async">
+          <div class="location-map-pin-label" id="locationMapLabel"></div>
+          <div class="location-map-overlay"><span>Ver no Google Maps</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="wrap">
+      <span class="eyebrow" style="justify-content:center;">Pronto para começar</span>
+      <h2>Seu próximo móvel pode começar com uma conversa hoje.</h2>
+      <p class="section-sub">Resposta em até 1 dia útil · Visita técnica sem custo na região</p>
+      <div class="hero-cta-row">
+        <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+        <a href="#" id="whatsCtaBtn2" class="btn btn-accent" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:16px;"><span class="logo-mark">C</span><span id="footerBrand">Cerne Marcenaria</span></div>
+        <p style="max-width:270px;" id="footerTagline">Móveis planejados com marcenaria própria em Bento Gonçalves, RS.</p>
+        <div style="margin-top:16px;"><span class="demo-tag">Demonstração conceitual</span></div>
+      </div>
+      <div class="footer-col"><h5>Navegação</h5><ul id="footerNav"></ul></div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="#" id="footerWhats" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><p id="footerPhone">(54) 3454-8821</p></li>
+          <li><p id="footerEmail">contato@cernemarcenaria.com.br</p></li>
+        </ul>
+      </div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="#">Política de privacidade</a></li><li><p id="footerCnpj">CNPJ 41.298.765/0001-02</p></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> <span id="footerBrand2">Cerne Marcenaria</span>. Todos os direitos reservados.</span>
+      <span id="footerCity">Bento Gonçalves, RS</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="whatsFloat" class="whats-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="padding:0;overflow:hidden;">
+  <img src="imagens/botao do zap.jpg" alt="WhatsApp" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;">
+</a>
+
+<script>
+/* ==================================================================
+   SITE_CONFIG — TODOS os dados demonstrativos do projeto.
+   Para adaptar este site a outro segmento/empresa, edite apenas
+   este objeto (e as variáveis de cor em :root, se desejar outra
+   identidade visual). Nenhuma outra parte do HTML/CSS precisa mudar.
+   ================================================================== */
+const SITE_CONFIG = {
+  companyName: "Cerne Marcenaria",
+  logoInitial: "C",
+  city: "Bento Gonçalves, RS",
+  tagline: "Marcenaria própria · Bento Gonçalves, RS",
+  heroHeadline: 'Móveis planejados que respeitam a <em>madeira</em> e o seu espaço.',
+  heroSub: "Projetamos e fabricamos cozinhas, closets, portas e móveis sob medida em marcenaria própria — do desenho em 3D à instalação final.",
+  heroMicro: "Resposta em até 1 dia útil · Visita técnica sem custo na região de Bento Gonçalves",
+    heroImage: {
+    url: "imagens/minimalist-kitchen-interior-design.jpg",
+    alt: "Ambiente planejado em marcenaria própria, com acabamento em madeira",
+    position: "center 42%"
+  },
+  primaryCtaLabel: "Solicitar orçamento",
+  secondaryCtaLabel: "Ver nossos trabalhos",
+  phoneDisplay: "(31) 8539-1759",
+  whatsappNumber: "553185391759",
+  whatsappMessage: "Recebemos sua mensagem, lhe retornaremos assim que possível",
+  email: "contato@cernemarcenaria.com.br",
+  address: { street: "Rua dos Pinheirais, 482 — Bairro São Bento", cityLine: "Bento Gonçalves — RS", zip: "95700-210" },
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rua+dos+Pinheirais+482+Bento+Goncalves+RS",
+  schedule: [
+    { days: "Segunda a sexta", label: "Segunda a sexta", hoursLabel: "08:00 — 18:00", weekdays: [1,2,3,4,5], startHour: 8, endHour: 18, closed:false },
+    { days: "Sábado", label: "Sábado", hoursLabel: "08:00 — 12:00", weekdays: [6], startHour: 8, endHour: 12, closed:false },
+    { days: "Domingo", label: "Domingo", hoursLabel: "Fechado", weekdays: [0], closed:true }
+  ],
+  areaServed: "Bento Gonçalves e cidades vizinhas da Serra Gaúcha",
+  cnpj: "41.298.765/0001-02",
+
+  navLinks: [
+    { label: "Serviços", href: "#servicos" },
+    { label: "Portfólio", href: "#portfolio" },
+    { label: "Como funciona", href: "#como-funciona" },
+    { label: "Perguntas", href: "#faq" },
+    { label: "Contato", href: "#contato" }
+  ],
+
+  stats: [
+    { target: 12, decimals: 0, suffix: "", label: "anos de marcenaria própria" },
+    { target: 340, decimals: 0, suffix: "+", label: "projetos entregues" },
+    { target: 4.9, decimals: 1, suffix: "", label: "avaliação média no Google" },
+    { target: 5, decimals: 0, suffix: " anos", label: "de garantia contratual" }
+  ],
+
+  about: {
+    paragraphs: [
+      "A Cerne nasceu em Bento Gonçalves para atender quem queria um móvel planejado sem abrir mão de acompanhar cada etapa — do desenho até o parafuso final.",
+      "Trabalhamos com produção própria: quem mede o seu ambiente é quem depois corta, monta e instala. Isso reduz erro de medida e evita repasse de responsabilidade entre fornecedores.",
+      "Hoje somos uma equipe de sete pessoas dividida entre projeto, produção e instalação, com oficina própria de 340m² no bairro São Bento."
+    ]
+  },
+
+  servicesTitle: "Projetos sob medida, para cada ambiente da casa.",
+  servicesSub: "Do primeiro desenho em 3D até a instalação, cada projeto passa pela mesma equipe.",
+  services: [
+    { icon:"kitchen", title:"Cozinhas planejadas", desc:"Layout pensado para fluxo de uso real: cocção, preparo e armazenamento organizados sem desperdício de espaço.", features:["Projeto 3D incluso","Medição técnica no local"], featured:true },
+    { icon:"closet", title:"Closets e guarda-roupas", desc:"Divisórias internas configuradas conforme o seu volume real de roupas e acessórios, não um padrão genérico.", features:["Divisórias sob medida","Ferragens de fechamento suave"] },
+    { icon:"door", title:"Portas e painéis", desc:"Portas de correr, painéis ripados e revestimentos que fecham a identidade visual do ambiente.", features:["Acabamento sob medida","Instalação por equipe própria"] },
+    { icon:"shelf", title:"Móveis sob medida", desc:"Estantes, racks, mesas e home office desenhados para o espaço exato — sem medidas de prateleira padrão.", features:["Desenho técnico detalhado","Escolha de ferragens e cor"] },
+    { icon:"cube", title:"Projeto 3D e obra", desc:"Visualização do ambiente antes da produção, com acompanhamento técnico durante a instalação.", features:["Renderização realista","Visita de conferência final"] },
+    { icon:"clock", title:"Prazo contratual", desc:"Cronograma de produção e instalação definido em contrato, com previsão clara de entrega.", cta:{label:"Consultar prazos", href:"#contato"} }
+  ],
+
+  diffTitle: "Fabricação própria do início ao fim.",
+  differentials: [
+    { icon:"factory", title:"Marcenaria própria", desc:"Produção interna — quem projeta é quem fabrica e instala." },
+    { icon:"boxCheck", title:"Projeto 3D antes de fechar", desc:"Você aprova a visualização completa antes de qualquer corte." },
+    { icon:"star", title:"Medição técnica inclusa", desc:"Visita ao local sem custo para levantar medidas reais." },
+    { icon:"checkCircle", title:"Prazo em contrato", desc:"Data de entrega formalizada, com condições descritas em contrato." }
+  ],
+
+  portfolioTitle: "Projetos entregues em Bento Gonçalves e região.",
+  portfolioFilters: [
+    { label:"Todos", value:"todos" }, { label:"Cozinhas", value:"cozinhas" },
+    { label:"Closets", value:"closets" }, { label:"Portas", value:"portas" }, { label:"Home office", value:"home-office" }
+  ],
+  portfolio: [
+    { cat:"cozinhas", catLabel:"Cozinhas", title:"Cozinha em L com ilha", desc:"Bairro São Bento — projeto com ilha central e coifa embutida, 2024.", img:"imagens/cosinha em L.jpg" },
+    { cat:"closets", catLabel:"Closets", title:"Closet aberto casal", desc:"Bairro Planalto — divisórias abertas e iluminação em LED integrada.", img:"imagens/closet aberto casal.jpg" },
+    { cat:"portas", catLabel:"Portas", title:"Porta de correr ripada", desc:"Centro — painel ripado em freijó com trilho superior embutido.", img:"imagens/porta de correr rapida.jpg" },
+    { cat:"home-office", catLabel:"Home office", title:"Estação de trabalho sob medida", desc:"Bairro Cinquentenário — bancada dupla com passagem de cabos oculta.", img:"imagens/home office.jpg" },
+    { cat:"cozinhas", catLabel:"Cozinhas", title:"Cozinha integrada compacta", desc:"Bairro São Vendelino — otimização de 8m² com armários até o teto.", img:"imagens/minimalist-kitchen-interior-design.jpg" },
+    { cat:"closets", catLabel:"Closets", title:"Guarda-roupa de canto", desc:"Bairro Conceição — aproveitamento de canto com portas de correr.", img:"imagens/guarda roupa de canto.jpg" }
+  ],
+
+  processTitle: "Do primeiro contato à instalação final.",
+  process: [
+    { title:"Contato e briefing", desc:"Você conta o que precisa — pelo WhatsApp, formulário ou telefone — e entendemos o escopo inicial." },
+    { title:"Visita técnica e medição", desc:"Vamos até o local levantar medidas reais e conversar sobre uso do espaço." },
+    { title:"Projeto 3D e orçamento", desc:"Apresentamos a visualização do ambiente junto com o orçamento fechado." },
+    { title:"Produção na marcenaria", desc:"Corte, montagem e acabamento são feitos internamente, com acompanhamento do cronograma." },
+    { title:"Instalação e entrega", desc:"Equipe própria realiza a instalação e faz a conferência final com você." }
+  ],
+
+  testimonials: [
+    { name:"Marina T.", role:"Bairro São Bento", quote:"O projeto 3D bateu exatamente com o que foi instalado. Nenhuma surpresa no dia da montagem." },
+    { name:"Rogério A.", role:"Bairro Planalto", quote:"Fizeram a medição, mandaram o orçamento em três dias e cumpriram o prazo do contrato à risca." },
+    { name:"Camila e Diego S.", role:"Centro", quote:"Trocamos o closet duas vezes de ideia e a equipe se adaptou sem cobrar retrabalho. Resultado ficou melhor do que imaginávamos." }
+  ],
+
+  faq: [
+    { q:"A visita técnica tem custo?", a:"Não. A visita para medição na região de Bento Gonçalves não tem custo. Para outras cidades da Serra Gaúcha, consulte disponibilidade e condições." },
+    { q:"Qual o prazo médio de entrega?", a:"Para cozinhas e closets, o prazo médio é de 5 a 8 semanas entre o fechamento do orçamento e a instalação, definido em contrato conforme a complexidade do projeto." },
+    { q:"Quais materiais vocês trabalham?", a:"Trabalhamos principalmente com MDF e MDP de fornecedores nacionais, com opções de laminado, laqueado fosco e revestimento em lâmina de madeira natural." },
+    { q:"Existe garantia sobre os móveis?", a:"Sim, 5 anos contra defeitos de fabricação em estrutura e ferragens, contados a partir da data de instalação." },
+    { q:"Quais formas de pagamento são aceitas?", a:"Aceitamos entrada de 50% na assinatura do contrato e o restante parcelado em até 3x, além de pagamento à vista com desconto." }
+  ],
+
+  serviceOptions: [
+    { value:"Cozinha planejada", icon:"kitchen" },
+    { value:"Closet / guarda-roupa", icon:"closet" },
+    { value:"Portas e painéis", icon:"door" },
+    { value:"Móvel sob medida", icon:"shelf" },
+    { value:"Ainda não sei", icon:"cube" }
+  ],
+
+  googleReviews: {
+    businessName: "Cerne Marcenaria (demonstração)",
+    score: 4.9,
+    total: 128,
+    items: [
+      { name:"Marina T.", rating:5, relativeDate:"há 2 semanas", text:"O projeto 3D bateu exatamente com o que foi instalado. Nenhuma surpresa no dia da montagem." },
+      { name:"Rogério A.", rating:5, relativeDate:"há 1 mês", text:"Fizeram a medição, mandaram o orçamento em três dias e cumpriram o prazo do contrato à risca." },
+      { name:"Camila S.", rating:5, relativeDate:"há 1 mês", text:"Trocamos o closet duas vezes de ideia e a equipe se adaptou sem cobrar retrabalho. Resultado ficou melhor do que imaginávamos." },
+      { name:"Diego P.", rating:4, relativeDate:"há 2 meses", text:"Ótimo acabamento e equipe atenciosa. Só o prazo inicial de resposta demorou um pouco mais do que eu esperava." },
+      { name:"Luciana M.", rating:5, relativeDate:"há 3 meses", text:"Cozinha planejada ficou impecável. Recomendo a visita técnica, ajudou muito a definir o layout." }
+    ]
+  }
+};
+
+/* ==================================================================
+   ÍCONES — biblioteca compartilhada, referenciada por nome no
+   SITE_CONFIG (chave "icon"). Adicione novos ícones aqui se um
+   segmento diferente precisar de outro conjunto visual.
+   ================================================================== */
+const ICONS = {
+  kitchen:'<path d="M3 9h18M3 15h18M9 3v18"/>',
+  closet:'<rect x="4" y="3" width="16" height="18" rx="1"/><line x1="12" y1="3" x2="12" y2="21"/>',
+  door:'<rect x="6" y="2" width="12" height="20" rx="1"/><circle cx="15" cy="12" r="0.8" fill="currentColor"/>',
+  shelf:'<rect x="3" y="4" width="18" height="14" rx="1"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="18" x2="12" y2="21"/>',
+  cube:'<path d="M4 4h16v16H4z"/><path d="M4 12h16M12 4v16"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>',
+  factory:'<path d="M2 12h20M6 12V6a2 2 0 012-2h8a2 2 0 012 2v6"/>',
+  boxCheck:'<path d="M4 4h16v16H4z"/><path d="M4 12h16"/>',
+  star:'<path d="M12 2l3 6 6 1-4.5 4 1 6L12 16l-5.5 3 1-6L3 9l6-1z"/>',
+  checkCircle:'<circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/>',
+  check:'<polyline points="20 6 9 17 4 12"/>'
+};
+function iconSvg(name, w){ return '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" width="'+(w||22)+'" height="'+(w||22)+'">'+(ICONS[name]||ICONS.cube)+'</svg>'; }
+function checkSvg(){ return '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="15" height="15">'+ICONS.check+'</svg>'; }
+
+(function(){
+  "use strict";
+  var C = SITE_CONFIG;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function waLink(msg){ return 'https://wa.me/'+C.whatsappNumber+'?text='+encodeURIComponent(msg || C.whatsappMessage); }
+
+  /* -------------------- render from SITE_CONFIG -------------------- */
+  document.getElementById('metaTitle').textContent = C.companyName+' — Móveis planejados em '+C.city;
+  document.getElementById('brandName').textContent = C.companyName;
+  document.getElementById('logoMark').textContent = C.logoInitial;
+  document.getElementById('footerBrand').textContent = C.companyName;
+  document.getElementById('footerBrand2').textContent = C.companyName;
+  document.getElementById('footerCity').textContent = C.city;
+  document.getElementById('footerTagline').textContent = 'Móveis planejados com marcenaria própria em '+C.city+'.';
+  document.getElementById('footerPhone').textContent = C.phoneDisplay;
+  document.getElementById('footerEmail').textContent = C.email;
+  document.getElementById('footerCnpj').textContent = 'CNPJ '+C.cnpj;
+  document.getElementById('phoneDisplay').textContent = C.phoneDisplay;
+  document.getElementById('heroBadgeDot').textContent = C.logoInitial;
+  document.getElementById('heroBadgeText').textContent = C.tagline;
+  document.getElementById('heroHeadline').innerHTML = C.heroHeadline;
+  document.getElementById('heroSub').textContent = C.heroSub;
+  document.getElementById('heroMicro').textContent = C.heroMicro;
+    var heroImageEl = document.getElementById('heroImage');
+  if(heroImageEl){
+    heroImageEl.src = C.heroImage.url;
+    heroImageEl.alt = C.heroImage.alt || '';
+    heroImageEl.style.objectPosition = C.heroImage.position || 'center';
+    heroImageEl.addEventListener('error', function(){
+      document.getElementById('heroVisual').classList.add('img-fallback');
+    });
+  }
+  document.getElementById('heroPrimaryCta').textContent = C.primaryCtaLabel;
+  document.getElementById('heroSecondaryCta').textContent = C.secondaryCtaLabel;
+  document.getElementById('headerCta').textContent = C.primaryCtaLabel;
+  document.getElementById('servicesTitle').textContent = C.servicesTitle;
+  document.getElementById('servicesSub').textContent = C.servicesSub;
+  document.getElementById('diffTitle').textContent = C.diffTitle;
+  document.getElementById('portfolioTitle').textContent = C.portfolioTitle;
+  document.getElementById('processTitle').textContent = C.processTitle;
+  ['whatsCtaBtn','whatsCtaBtn2','whatsFloat','footerWhats'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.setAttribute('href', waLink());
+  });
+
+  // nav
+  var navHtml = C.navLinks.map(function(l){ return '<a href="'+l.href+'">'+l.label+'</a>'; }).join('');
+  document.getElementById('primaryNav').innerHTML = navHtml;
+  document.getElementById('mobileNav').innerHTML = navHtml + '<a href="#contato" class="btn btn-accent">'+C.primaryCtaLabel+'</a>';
+  document.getElementById('footerNav').innerHTML = C.navLinks.map(function(l){ return '<li><a href="'+l.href+'">'+l.label+'</a></li>'; }).join('');
+
+  // trust stats
+  document.getElementById('trustGrid').innerHTML = C.stats.map(function(s){
+    return '<div class="trust-item"><div class="trust-num" data-target="'+s.target+'" data-decimals="'+s.decimals+'" data-suffix="'+s.suffix+'">0</div><div class="trust-label">'+s.label+'</div></div>';
+  }).join('');
+
+  // about
+  document.getElementById('aboutCopy').innerHTML =
+    '<span class="eyebrow">Quem somos</span>'+
+    '<h2 class="section-title">Uma marcenaria de bairro, com processo de estúdio.</h2>'+
+    C.about.paragraphs.map(function(p){ return '<p>'+p+'</p>'; }).join('');
+
+  // services
+  document.getElementById('servicesGrid').innerHTML = C.services.map(function(s){
+    var featCls = s.featured ? ' service-card-featured' : '';
+    var featuresHtml = s.features ? '<ul class="service-list">'+s.features.map(function(f){ return '<li>'+checkSvg()+f+'</li>'; }).join('')+'</ul>' : '';
+    var ctaHtml = s.cta ? '<a href="'+s.cta.href+'" class="btn btn-ghost btn-sm" style="margin-top:16px;">'+s.cta.label+'</a>' : '';
+    return '<div class="service-card'+featCls+'">'+
+      '<div class="icon-tile">'+iconSvg(s.icon)+'</div><h3>'+s.title+'</h3><p>'+s.desc+'</p>'+featuresHtml+ctaHtml+
+    '</div>';
+  }).join('');
+
+  // differentials
+  document.getElementById('diffGrid').innerHTML = C.differentials.map(function(d){
+    return '<div class="diff-item"><div class="icon-tile">'+iconSvg(d.icon)+'</div><h4>'+d.title+'</h4><p>'+d.desc+'</p></div>';
+  }).join('');
+
+  // process
+  document.getElementById('processList').innerHTML = C.process.map(function(p,i){
+    return '<div class="process-item"><div class="process-num">'+String(i+1).padStart(2,'0')+'</div><div><h4>'+p.title+'</h4><p>'+p.desc+'</p></div></div>';
+  }).join('');
+
+  // google reviews
+  var STAR_FULL = '<svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.7 21l1.6-6.8L2 9.6 9 9z"/></svg>';
+  function starsHtmlFor(n){ var s=''; for(var i=0;i<5;i++){ s += i<n ? STAR_FULL : STAR_FULL.replace('<svg viewBox', '<svg style="opacity:.25" viewBox'); } return s; }
+  var GR = C.googleReviews;
+  document.getElementById('reviewsScore').textContent = GR.score.toFixed(1);
+  document.getElementById('reviewsSummaryStars').innerHTML = starsHtmlFor(Math.round(GR.score));
+  document.getElementById('reviewsCount').textContent = GR.total+' avaliações no Google (demonstração)';
+
+  var reviewsTrack = document.getElementById('reviewsTrack');
+  reviewsTrack.innerHTML = GR.items.map(function(r){
+    var initials = r.name.split(' ').map(function(n){return n[0];}).slice(0,2).join('');
+    return '<div class="review-card">'+
+      '<div class="review-top"><div class="review-avatar">'+initials+'</div><div><div class="review-name">'+r.name+'</div><div class="review-date">'+r.relativeDate+'</div></div></div>'+
+      '<div class="review-stars">'+starsHtmlFor(r.rating)+'</div>'+
+      '<p class="quote">'+r.text+'</p></div>';
+  }).join('');
+
+  document.getElementById('reviewsPrev').addEventListener('click', function(){ reviewsTrack.scrollBy({left:-360, behavior: reduceMotion ? 'auto' : 'smooth'}); });
+  document.getElementById('reviewsNext').addEventListener('click', function(){ reviewsTrack.scrollBy({left:360, behavior: reduceMotion ? 'auto' : 'smooth'}); });
+  reviewsTrack.addEventListener('scroll', function(){
+    var fadeLeft = document.getElementById('reviewsFadeLeft');
+    fadeLeft.style.opacity = reviewsTrack.scrollLeft > 12 ? '1' : '0';
+    var atEnd = reviewsTrack.scrollLeft + reviewsTrack.clientWidth >= reviewsTrack.scrollWidth - 12;
+    document.getElementById('reviewsHintText').parentElement.style.display = atEnd ? 'none' : 'flex';
+  }, {passive:true});
+
+  // reviews modal (fictitious Google-style preview)
+  var gmodal = document.getElementById('reviewsModal');
+  document.getElementById('gmodalBizName').textContent = GR.businessName;
+  document.getElementById('gmodalBizScore').textContent = GR.score.toFixed(1);
+  document.getElementById('gmodalBizStars').innerHTML = starsHtmlFor(Math.round(GR.score));
+  document.getElementById('gmodalBizCount').textContent = '('+GR.total+' avaliações)';
+  document.getElementById('gmodalBody').innerHTML = GR.items.map(function(r){
+    var initials = r.name.split(' ').map(function(n){return n[0];}).slice(0,2).join('');
+    return '<div class="gmodal-review"><div class="review-top"><div class="review-avatar">'+initials+'</div><div><div class="review-name">'+r.name+'</div><div class="review-date">'+r.relativeDate+'</div></div></div>'+
+      '<div class="review-stars">'+starsHtmlFor(r.rating)+'</div><p class="quote">'+r.text+'</p></div>';
+  }).join('');
+  document.getElementById('openReviewsModal').addEventListener('click', function(){ gmodal.classList.add('open'); });
+  document.getElementById('gmodalClose').addEventListener('click', function(){ gmodal.classList.remove('open'); });
+  gmodal.addEventListener('click', function(e){ if(e.target === gmodal){ gmodal.classList.remove('open'); } });
+
+  // faq
+  document.getElementById('faqList').innerHTML = C.faq.map(function(f){
+    return '<div class="faq-item"><button class="faq-q">'+f.q+
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>'+
+      '<div class="faq-a"><p>'+f.a+'</p></div></div>';
+  }).join('');
+
+  // form chips (service select)
+  var selectedServices = [];
+  var chipsWrap = document.getElementById('fserviceChips');
+  var fserviceHidden = document.getElementById('fservice');
+  chipsWrap.innerHTML = C.serviceOptions.map(function(o,i){
+    return '<button type="button" class="chip-option" data-value="'+o.value+'" id="chip-'+i+'">'+iconSvg(o.icon,15)+'<span>'+o.value+'</span><span class="chip-check">'+checkSvg()+'</span></button>';
+  }).join('');
+  chipsWrap.addEventListener('click', function(e){
+    var chip = e.target.closest('.chip-option');
+    if(!chip) return;
+    var val = chip.getAttribute('data-value');
+    var idx = selectedServices.indexOf(val);
+    if(idx === -1){ selectedServices.push(val); chip.classList.add('selected'); }
+    else { selectedServices.splice(idx,1); chip.classList.remove('selected'); }
+    fserviceHidden.value = selectedServices.join(', ');
+  });
+
+  // location
+  document.getElementById('locationTitle').textContent = 'Atendimento em '+C.city+'.';
+  document.getElementById('locationDl').innerHTML =
+    '<dt>Endereço</dt><dd>'+C.address.street+'<br>'+C.address.cityLine+' · CEP '+C.address.zip+'</dd>';
+  document.getElementById('locationMapLabel').textContent = C.address.street+' — '+C.address.cityLine;
+  document.getElementById('locationAreaServed').textContent = C.areaServed;
+  document.getElementById('mapsCtaBtn').setAttribute('href', C.mapsUrl);
+  document.getElementById('locationMapLink').setAttribute('href', C.mapsUrl);
+
+  // hours + open/closed status
+  var now = new Date();
+  var curDay = now.getDay(), curHour = now.getHours() + now.getMinutes()/60;
+  var isOpenNow = C.schedule.some(function(s){
+    return !s.closed && s.weekdays.indexOf(curDay) !== -1 && curHour >= s.startHour && curHour < s.endHour;
+  });
+  var badge = document.getElementById('openBadge');
+  badge.className = 'open-badge ' + (isOpenNow ? 'is-open' : 'is-closed');
+  badge.innerHTML = '<span class="dot"></span>' + (isOpenNow ? 'Aberto agora' : 'Fechado agora');
+
+  document.getElementById('hoursRows').innerHTML = C.schedule.map(function(s){
+    var isToday = s.weekdays.indexOf(curDay) !== -1;
+    return '<div class="hours-row'+(isToday?' today':'')+(s.closed?' closed':'')+'"><span class="days">'+s.label+'</span><span class="hrs">'+s.hoursLabel+'</span></div>';
+  }).join('');
+
+  /* -------------------- header scroll state -------------------- */
+  var header = document.getElementById('siteHeader');
+  function onScroll(){ if(window.scrollY > 12){ header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); } }
+  document.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* -------------------- mobile menu -------------------- */
+  var menuToggle = document.getElementById('menuToggle');
+  var mobilePanel = document.getElementById('mobilePanel');
+  menuToggle.addEventListener('click', function(){
+    var open = mobilePanel.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobilePanel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ mobilePanel.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); });
+  });
+
+  /* -------------------- hero tilt -------------------- */
+  var heroVisual = document.getElementById('heroVisual');
+  if(heroVisual && !reduceMotion && window.matchMedia('(hover:hover)').matches){
+    heroVisual.addEventListener('mousemove', function(e){
+      var r = heroVisual.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      heroVisual.style.transform = 'perspective(900px) rotateY('+(px*6)+'deg) rotateX('+(py*-6)+'deg)';
+    });
+    heroVisual.addEventListener('mouseleave', function(){ heroVisual.style.transform = 'perspective(900px) rotateY(0) rotateX(0)'; });
+  }
+
+  /* -------------------- scroll reveal -------------------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window && !reduceMotion){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); } });
+    }, {threshold:0.15});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else { revealEls.forEach(function(el){ el.classList.add('in'); }); }
+
+  /* -------------------- animated counters -------------------- */
+  var counters = document.querySelectorAll('.trust-num[data-target]');
+  function animateCounter(el){
+    var target = parseFloat(el.getAttribute('data-target')) || 0;
+    var decimals = parseInt(el.getAttribute('data-decimals'), 10) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    if(reduceMotion){ el.textContent = target.toFixed(decimals)+suffix; return; }
+    var duration = 1400, startTime = null;
+    function step(ts){
+      if(!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = (eased * target).toFixed(decimals)+suffix;
+      if(progress < 1){ requestAnimationFrame(step); } else { el.textContent = target.toFixed(decimals)+suffix; }
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var cio = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){ if(entry.isIntersecting){ animateCounter(entry.target); cio.unobserve(entry.target); } });
+    }, {threshold:0.5});
+    counters.forEach(function(el){ cio.observe(el); });
+  }
+
+  /* -------------------- FAQ accordion -------------------- */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var answer = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+        if(openItem !== item){ openItem.classList.remove('open'); openItem.querySelector('.faq-a').style.maxHeight = null; }
+      });
+      if(isOpen){ item.classList.remove('open'); answer.style.maxHeight = null; }
+      else{ item.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; }
+    });
+  });
+
+  /* -------------------- portfolio filter + carousel -------------------- */
+  var carousel = document.getElementById('portCarousel');
+  var dotsWrap = document.getElementById('portDots');
+  var lightbox = document.getElementById('lightbox');
+
+  document.getElementById('filterRow').innerHTML = C.portfolioFilters.map(function(f,i){
+    return '<button class="filter-pill'+(i===0?' active':'')+'" data-filter="'+f.value+'">'+f.label+'</button>';
+  }).join('');
+
+  var currentPortfolioItems = [];
+  var currentLightboxIndex = 0;
+  function renderPortfolio(filter){
+    carousel.innerHTML = ''; dotsWrap.innerHTML = '';
+    var items = C.portfolio.filter(function(p){ return filter === 'todos' || p.cat === filter; });
+    currentPortfolioItems = items;
+    items.forEach(function(p, i){
+      var card = document.createElement('div');
+      card.className = 'port-card';
+      var photoContent = p.img ? '<img src="'+p.img+'" alt="'+p.title+'" loading="lazy" decoding="async">' : iconSvg(iconForCategory(p.cat), 46);
+      card.innerHTML =
+        '<div class="port-photo">'+photoContent+'</div>'+
+        '<div class="port-info"><div class="port-cat">'+p.catLabel+'</div><h4>'+p.title+'</h4><p>'+p.desc+'</p></div>';
+      card.addEventListener('click', function(){ openLightbox(i); });
+      carousel.appendChild(card);
+      var dot = document.createElement('button');
+      if(i === 0) dot.classList.add('active');
+      dot.addEventListener('click', function(){
+        carousel.scrollTo({left: carousel.children[i].offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth'});
+      });
+      dotsWrap.appendChild(dot);
+    });
+  }
+  function iconForCategory(cat){
+    return {cozinhas:'kitchen', closets:'closet', portas:'door', 'home-office':'shelf'}[cat] || 'cube';
+  }
+  function updateDots(){
+    var dots = dotsWrap.querySelectorAll('button');
+    var cards = carousel.querySelectorAll('.port-card');
+    if(!cards.length) return;
+    var scrollLeft = carousel.scrollLeft, closest = 0, closestDist = Infinity;
+    cards.forEach(function(card, i){ var dist = Math.abs(card.offsetLeft - scrollLeft); if(dist < closestDist){ closestDist = dist; closest = i; } });
+    dots.forEach(function(d, i){ d.classList.toggle('active', i === closest); });
+  }
+  carousel.addEventListener('scroll', function(){ window.requestAnimationFrame(updateDots); }, {passive:true});
+
+  document.getElementById('filterRow').addEventListener('click', function(e){
+    var pill = e.target.closest('.filter-pill');
+    if(!pill) return;
+    document.querySelectorAll('.filter-pill').forEach(function(p){ p.classList.remove('active'); });
+    pill.classList.add('active');
+    renderPortfolio(pill.getAttribute('data-filter'));
+  });
+
+  document.getElementById('portPrev').addEventListener('click', function(){ carousel.scrollBy({left: -370, behavior: reduceMotion ? 'auto' : 'smooth'}); });
+  document.getElementById('portNext').addEventListener('click', function(){ carousel.scrollBy({left: 370, behavior: reduceMotion ? 'auto' : 'smooth'}); });
+  document.getElementById('portPrevMobile').addEventListener('click', function(){ carousel.scrollBy({left: -280, behavior: reduceMotion ? 'auto' : 'smooth'}); });
+  document.getElementById('portNextMobile').addEventListener('click', function(){ carousel.scrollBy({left: 280, behavior: reduceMotion ? 'auto' : 'smooth'}); });
+
+  function openLightbox(index){
+    currentLightboxIndex = index;
+    var p = currentPortfolioItems[index];
+    document.getElementById('lightboxCat').textContent = p.catLabel;
+    document.getElementById('lightboxTitle').textContent = p.title;
+    document.getElementById('lightboxDesc').textContent = p.desc;
+    var photoContent = p.img ? '<img src="'+p.img+'" alt="'+p.title+'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;">' : iconSvg(iconForCategory(p.cat), 60);
+    document.getElementById('lightboxPhotoIcon').innerHTML = photoContent;
+    document.getElementById('lightboxCounter').textContent = (index+1)+' de '+currentPortfolioItems.length;
+    var multi = currentPortfolioItems.length > 1;
+    document.getElementById('lightboxPrev').style.display = multi ? 'flex' : 'none';
+    document.getElementById('lightboxNext').style.display = multi ? 'flex' : 'none';
+    lightbox.classList.add('open');
+  }
+  function stepLightbox(dir){
+    if(!currentPortfolioItems.length) return;
+    var next = (currentLightboxIndex + dir + currentPortfolioItems.length) % currentPortfolioItems.length;
+    openLightbox(next);
+  }
+  document.getElementById('lightboxPrev').addEventListener('click', function(e){ e.stopPropagation(); stepLightbox(-1); });
+  document.getElementById('lightboxNext').addEventListener('click', function(e){ e.stopPropagation(); stepLightbox(1); });
+  document.getElementById('lightboxClose').addEventListener('click', function(){ lightbox.classList.remove('open'); });
+  lightbox.addEventListener('click', function(e){ if(e.target === lightbox){ lightbox.classList.remove('open'); } });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ lightbox.classList.remove('open'); document.getElementById('reviewsModal').classList.remove('open'); }
+    if(lightbox.classList.contains('open')){
+      if(e.key === 'ArrowLeft'){ stepLightbox(-1); }
+      if(e.key === 'ArrowRight'){ stepLightbox(1); }
+    }
+  });
+
+  renderPortfolio('todos');
+
+  /* -------------------- phone mask: (31) 99999-9999 -------------------- */
+  var phoneInput = document.getElementById('fphone');
+  phoneInput.addEventListener('input', function(){
+    var digits = phoneInput.value.replace(/\D/g, '').slice(0, 11);
+    var formatted = digits;
+    if(digits.length > 0) formatted = '(' + digits.substring(0,2);
+    if(digits.length >= 3) formatted += ') ' + digits.substring(2, digits.length >= 7 ? 7 : digits.length);
+    if(digits.length >= 8) formatted += '-' + digits.substring(7, 11);
+    phoneInput.value = formatted;
+  });
+
+  /* -------------------- lead form (demo submit) -------------------- */
+  var leadForm = document.getElementById('leadForm');
+  leadForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = leadForm.querySelector('button[type="submit"]');
+    var original = btn.textContent;
+    btn.textContent = 'Redirecionando para o WhatsApp...';
+    btn.disabled = true;
+
+    window.open(waLink("Recebemos sua mensagem, lhe retornaremos assim que possível"), '_blank');
+
+    setTimeout(function(){
+      btn.textContent = 'Enviado — obrigado!';
+      setTimeout(function(){
+        btn.textContent = original; btn.disabled = false; leadForm.reset();
+        selectedServices = []; fserviceHidden.value = '';
+        chipsWrap.querySelectorAll('.chip-option.selected').forEach(function(c){ c.classList.remove('selected'); });
+      }, 2000);
+    }, 600);
+  });
+
+  /* -------------------- footer year -------------------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+})();
+</script>
+
+</body>
+</html>
