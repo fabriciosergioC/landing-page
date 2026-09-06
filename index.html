@@ -564,12 +564,22 @@
 
   .hours-block{margin-top:30px;padding-top:26px;border-top:1px solid var(--border);}
   .hours-title{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-2);font-weight:600;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
-  .open-badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;padding:5px 11px;border-radius:var(--radius-pill);font-weight:600;text-transform:none;letter-spacing:0;}
+  .open-badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;padding:5px 12px;border-radius:var(--radius-pill);font-weight:600;text-transform:none;letter-spacing:0;transition:all .3s var(--ease);}
   .open-badge .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
-  .open-badge.is-open{background:rgba(120,190,120,.14);color:#8fd18f;}
-  .open-badge.is-open .dot{background:#6fc26f;box-shadow:0 0 0 3px rgba(111,194,111,.2);}
-  .open-badge.is-closed{background:rgba(199,154,91,.1);color:var(--muted);}
-  .open-badge.is-closed .dot{background:var(--muted-2);}
+  .open-badge.is-open{background:rgba(34,197,94,0.12);color:#4ade80;border:1px solid rgba(34,197,94,0.22);}
+  .open-badge.is-open .dot{background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,0.25);}
+  .open-badge.is-closed{background:rgba(239,68,68,0.10);color:#fca5a5;border:1px solid rgba(239,68,68,0.20);}
+  .open-badge.is-closed .dot{background:#ef4444;box-shadow:0 0 0 3px rgba(239,68,68,0.20);}
+
+  .whats-schedule-box{margin-top:22px;padding:16px 18px;background:rgba(255,255,234,0.03);border:1px solid var(--border);border-radius:var(--radius-sm);}
+  .whats-schedule-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;}
+  .whats-schedule-title{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted-2);font-weight:600;display:flex;align-items:center;}
+  .whats-schedule-list{display:flex;flex-direction:column;gap:8px;}
+  .whats-schedule-list .schedule-item{display:flex;justify-content:space-between;align-items:center;font-size:13.5px;color:var(--muted);}
+  .whats-schedule-list .schedule-item .day{color:var(--text);}
+  .whats-schedule-list .schedule-item .time{font-variant-numeric:tabular-nums;color:var(--muted);}
+  .whats-schedule-list .schedule-item.today .day{color:var(--accent-bright);font-weight:600;}
+  .whats-schedule-list .schedule-item.closed-day .time{color:var(--muted-2);}
   .hours-rows{display:flex;flex-direction:column;}
   .hours-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-top:1px solid var(--border);font-size:14px;}
   .hours-row:first-child{border-top:none;}
@@ -840,7 +850,11 @@
   <section id="contato" class="zebra divider-top divider-bottom">
     <div class="wrap">
       <div class="section-head reveal">
-        <div><span class="eyebrow">Contato</span><h2 class="section-title">Vamos falar sobre o seu projeto.</h2></div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;">
+          <span class="eyebrow" style="margin-bottom:0;">Contato</span>
+          <span class="open-badge" id="sectionOpenBadge"></span>
+        </div>
+        <h2 class="section-title">Vamos falar sobre o seu projeto.</h2>
         <p class="section-sub">Responda o formulário ou chame diretamente no WhatsApp — o que for mais fácil para você.</p>
       </div>
       <div class="lead-grid reveal">
@@ -873,6 +887,16 @@
               <img src="imagens/botao do zap.jpg" alt="WhatsApp" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-sm);display:block;">
             </div>
             <div><strong id="phoneDisplay">(54) 3454-8821</strong><span>Telefone / WhatsApp</span></div>
+          </div>
+          <div class="whats-schedule-box">
+            <div class="whats-schedule-head">
+              <span class="whats-schedule-title">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block;vertical-align:-1px;margin-right:5px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Atendimento
+              </span>
+              <span class="open-badge" id="contactOpenBadge"></span>
+            </div>
+            <div class="whats-schedule-list" id="contactScheduleList"></div>
           </div>
         </div>
       </div>
@@ -984,7 +1008,7 @@ const SITE_CONFIG = {
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rua+dos+Pinheirais+482+Bento+Goncalves+RS",
   schedule: [
     { days: "Segunda a sexta", label: "Segunda a sexta", hoursLabel: "08:00 — 18:00", weekdays: [1,2,3,4,5], startHour: 8, endHour: 18, closed:false },
-    { days: "Sábado", label: "Sábado", hoursLabel: "08:00 — 12:00", weekdays: [6], startHour: 8, endHour: 12, closed:false },
+    { days: "Sábado", label: "Sábado", hoursLabel: "08:00 — 13:00", weekdays: [6], startHour: 8, endHour: 13, closed:false },
     { days: "Domingo", label: "Domingo", hoursLabel: "Fechado", weekdays: [0], closed:true }
   ],
   areaServed: "Bento Gonçalves e cidades vizinhas da Serra Gaúcha",
@@ -1274,14 +1298,33 @@ function checkSvg(){ return '<svg viewBox="0 0 24 24" fill="none" stroke-linecap
   var isOpenNow = C.schedule.some(function(s){
     return !s.closed && s.weekdays.indexOf(curDay) !== -1 && curHour >= s.startHour && curHour < s.endHour;
   });
-  var badge = document.getElementById('openBadge');
-  badge.className = 'open-badge ' + (isOpenNow ? 'is-open' : 'is-closed');
-  badge.innerHTML = '<span class="dot"></span>' + (isOpenNow ? 'Aberto agora' : 'Fechado agora');
 
-  document.getElementById('hoursRows').innerHTML = C.schedule.map(function(s){
+  var badgeHtml = '<span class="dot"></span>' + (isOpenNow ? 'Aberto agora' : 'Fechado agora');
+  var badgeClass = 'open-badge ' + (isOpenNow ? 'is-open' : 'is-closed');
+
+  ['openBadge', 'contactOpenBadge', 'sectionOpenBadge'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el){
+      el.className = badgeClass;
+      el.innerHTML = badgeHtml;
+    }
+  });
+
+  var scheduleRowsHtml = C.schedule.map(function(s){
     var isToday = s.weekdays.indexOf(curDay) !== -1;
     return '<div class="hours-row'+(isToday?' today':'')+(s.closed?' closed':'')+'"><span class="days">'+s.label+'</span><span class="hrs">'+s.hoursLabel+'</span></div>';
   }).join('');
+
+  var hoursRowsEl = document.getElementById('hoursRows');
+  if(hoursRowsEl) hoursRowsEl.innerHTML = scheduleRowsHtml;
+
+  var contactListEl = document.getElementById('contactScheduleList');
+  if(contactListEl){
+    contactListEl.innerHTML = C.schedule.map(function(s){
+      var isToday = s.weekdays.indexOf(curDay) !== -1;
+      return '<div class="schedule-item'+(isToday?' today':'')+(s.closed?' closed-day':'')+'"><span class="day">'+s.label+'</span><span class="time">'+s.hoursLabel+'</span></div>';
+    }).join('');
+  }
 
   /* -------------------- header scroll state -------------------- */
   var header = document.getElementById('siteHeader');
