@@ -515,9 +515,13 @@
     width:100%;background:var(--surface-2);border:1px solid var(--border-strong);border-radius:11px;
     padding:14px 15px;color:var(--text);font-size:14.5px;font-family:inherit;transition:border-color .25s, box-shadow .25s;
   }
-  .field input::placeholder, .field textarea::placeholder{
-    color:rgba(245,241,234,0.15);
-    opacity:1;
+  .field input::placeholder, .field textarea::placeholder,
+  .field input::-webkit-input-placeholder, .field textarea::-webkit-input-placeholder,
+  .field input::-moz-placeholder, .field textarea::-moz-placeholder,
+  .field input:-ms-input-placeholder, .field textarea:-ms-input-placeholder{
+    color: rgba(245, 241, 234, 0.08) !important;
+    -webkit-text-fill-color: rgba(245, 241, 234, 0.08) !important;
+    opacity: 1 !important;
   }
   .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px rgba(199,154,91,.15);}
   .field textarea{resize:vertical;min-height:96px;}
